@@ -1,4 +1,7 @@
 # learn Linux
 
-* [Chapter1](study.md)
-  * [函数](函数.md)
+* [iptables](iptables.md)
+
+* [lnmp建站实验](lnmp建站实验/LNMP建站实验.md)
+
+* [函数](函数.md)
