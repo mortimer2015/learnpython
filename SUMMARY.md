@@ -5,7 +5,7 @@
 
 * [lnmp建站实验](lnmp建站实验/LNMP建站实验.md)
 
-* [varnish](varnish1/varnish.md)
+* [varnish1](varnish1/varnish.md)
 
 * [函数](函数.md)
 
