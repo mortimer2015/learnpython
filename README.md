@@ -1,5 +1,12 @@
 # 编程环境准备
 
+编辑用户目录下pip/pip.conf
+```
+[global]
+timeout = 6000
+index-url = https://mirrors.aliyun.com/pypi/simple/
+```
+
 VSCode“自动格式化代码”的快捷键是“Alt+Shift+F”。要格式化Python代码，需要安装Python包yapf（或autopep8、等）
 
 `pip install yapf`
