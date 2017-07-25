@@ -9,7 +9,7 @@ def data_source():
         time.sleep(0.1)
 
 
-def top_k(k, time):
+def top_k(k, time=1):
     lst = []
     ds = data_source()
     start_time = datetime.datetime.now()
@@ -17,8 +17,12 @@ def top_k(k, time):
         lst.append(next(ds))
         stop_time = datetime.datetime.now()
         if (stop_time - start_time).total_seconds() >= (time - 0.1):
-            break
-    return lst
+            ret = []
+            lst.sort()
+            for _ in range(0, k):
+                ret.append(lst.pop())
+            yield ret
 
 
-print(top_k(1, 1))
+g = top_k(3)
+print(next(g))
